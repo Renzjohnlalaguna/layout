@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+.body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 5px; 
+  width: 100%;
+  box-sizing: border-box; 
+  padding: 5px; 
+}
+
+.blue {
+  background-color: #3366CC;
+}
+
+.yellow {
+  background-color: #FFCC33;
+}
+
+.green {
+  background-color: #33CC66;
+}
+
+
+.blue-large {
+  grid-column: 1; columns
+}
+
+.blue-small {
+
+}
+
+.yellow-wide {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.yellow-square {
+  grid-row: 2;
+}
+
+.green-wide {
+  grid-column: 1;
+}
+
+.green-tall {
+    grid-column: 1;
+    grid-row: 4;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="blue blue-large"></div>
+  <div class="blue blue-small"></div>
+  <div class="blue blue-small"></div>
+
+  <div class="yellow yellow-wide"></div>
+  <div class="yellow yellow-square"></div>
+  <div class="yellow yellow-square"></div>
+
+  <div class="green green-wide"></div>
+  <div class="green"></div>
+  <div class="green"></div>
+
+  <div class="green green-tall"></div>
+  <div class="green"></div>
+  <div class="green"></div>
+</div>
+
+</body>
+</html>
